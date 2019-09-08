@@ -1,0 +1,45 @@
+.footer
+    padding: 15px 0px
+    order: 3
+    flex: 0 0 auto
+    background-color: black
+    position: relative
+    z-index: 10
+    color: white
+    .copy
+        text-transform: uppercase
+        font-weight: 600
+        margin-bottom: 0px
+.foo
+    &-list
+        text-align: center
+        a
+            color: white
+            text-decoration: underline
+            margin-bottom: 10px
+            font-size: 16px
+            &:hover
+                color: $secondary-color
+    &-social-list
+        li
+            margin-right: 15px
+            &:last-child
+                margin-right: 0px
+            a
+                padding: 5px 0px
+                i
+                    color: white
+                &:hover
+                    color: $secondary-color
+
+@media(min-width: 992px)
+    .foo
+        &-social-list
+            justify-content: flex-start
+
+@media(min-width: 1500px)
+    .foo-list
+        li
+            margin-right: 20px
+            &:last-child
+                margin-right: 0px

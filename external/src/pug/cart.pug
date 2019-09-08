@@ -1,0 +1,236 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel="stylesheet" type="text/css" href="./css/slick.css")
+        link(rel="stylesheet" type="text/css" href="./css/slick-theme.css")
+        link(rel="stylesheet" type="text/css" href="./css/jquery.scrollbar.css")
+        link(rel='stylesheet' href='plugins/bootstrap/bootstrap.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .main-wrapper
+            include components/header.pug
+            main.content
+              section.cart.mb20
+                .container
+                  .row
+                    .col-12.mb20
+                      nav(aria-label='breadcrumb')
+                        ol.breadcrumb
+                          li.breadcrumb-item
+                            a(href='#') Главная
+                          li.breadcrumb-item
+                            a(href='#') Магазин
+                          li.breadcrumb-item.active(aria-current='page') Набор Женский
+                    .col-12.col-xxl-9
+                      .row
+                        .col-12.col-lg-5.mb20
+                          .cart-preview.js-priview-lg
+                            .cart-peiview-el-lg
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/cart-a.jpg', alt='product')
+                            .cart-peiview-el-lg
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/comment-b.jpg', alt='product')
+                            .cart-peiview-el-lg
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/cart-a.jpg', alt='product')
+                            .cart-peiview-el-lg
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/cart-a.jpg', alt='product')
+                            .cart-peiview-el-lg
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/cart-a.jpg', alt='product')
+                          .cart-priview-sm.js-priview-sm
+                            .cart-peiview-el-sm
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/cart-a.jpg', alt='product')
+                            .cart-peiview-el-sm
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/comment-b.jpg', alt='product')
+                            .cart-peiview-el-sm
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/cart-a.jpg', alt='product')
+                            .cart-peiview-el-sm
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/cart-a.jpg', alt='product')
+                            .cart-peiview-el-sm
+                              .cart-previeew-el-img
+                                img.embed-responsive(src='./img/cart-a.jpg', alt='product')
+                        .col-12.col-lg-7.mb20
+                            .cart-info
+                              h3.mb-3 Набор Женский
+                              .cart-rating.mb-4
+                                .rating-numb 4.1
+                                ul.rating
+                                  li
+                                    i.fas.fa-star
+                                  li
+                                    i.fas.fa-star
+                                  li
+                                    i.fas.fa-star
+                                  li
+                                    i.fas.fa-star
+                                  li
+                                    i.far.fa-star
+                              .cart-info-txt
+                                p  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.
+                              .cart-info-box.align-items-start
+                                .cart-price-wiew.mb-2
+                                  div.text-muted.text-size-small.mb-2 Споимость набора
+                                  h4.text-costom 11 900 тг
+                                .count.flex-wrap.mb-2
+                                  div.text-muted.text-size-small.w-100.mb-2 Споимость набора
+                                  button.btn-count.btn-count--minus.js-qty__adjust.js-qty__adjust--minus -
+                                  input.count-cotrols.js-qty__num(type='number', value='10')
+                                  button.btn-count.btn-count--plus.js-qty__adjust.js-qty__adjust--plus +
+                                .cart-btn-box
+                                  a.btn-wrap.btn-wrap-iversed.text-weight-bold.btn-icon(href="")
+                                      .btn-content.text-weight-bold                
+                                          | В корзину
+                                          i.ml-3.far.fa-shopping-bag
+                              .cart-by-click
+                                .input-group.input-group-costom.w-100.mb-3
+                                  input.form-control(type='text', placeholder='Ваш телефон', aria-label='Ваш телефон', aria-describedby='basic-addon2')
+                                  .input-group-append
+                                    button.btn.btn-lighten(type='button') Купить в 1 клик
+                        .col-12
+                              .cart-info
+                                nav
+                                  #nav-tab.nav.nav-tabs(role='tablist')
+                                    a#nav-home-tab.nav-item.nav-link.active(data-toggle='tab', href='#nav-home', role='tab', aria-controls='nav-home', aria-selected='true') Описание товара
+                                    a#nav-profile-tab.nav-item.nav-link(data-toggle='tab', href='#nav-profile', role='tab', aria-controls='nav-profile', aria-selected='false') Данные о товаре
+                                    a#nav-contact-tab.nav-item.nav-link(data-toggle='tab', href='#nav-contact', role='tab', aria-controls='nav-contact', aria-selected='false') Отзывы от покупателей
+                                #nav-tabContent.tab-content
+                                  #nav-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-home-tab')
+                                    .row
+                                      .col-12.col-xl-7
+                                        .carts-info
+                                          ul.list-decoration
+                                            li 20 листов А4, 360 картинок, связанных с разными аспектами жизни человека. Учтены 9 секторов по фэн – шуй
+                                            li Подробная инструкция
+                                            li Лист активации
+                                            li Ватман А2 поделенный на сектора
+                                            li Упакована в фирменный тубус:
+                                              ul
+                                                li 
+                                                  p — Календарь растущей луны, когда вы сможете составить себе карту желаний
+                                                li 
+                                                  p — Календарь растущей луны, когда вы сможете составить себе карту желаний
+                                                li 
+                                                  p — Свеча Алтайская, заговоренная на очищение с подробной инструкцией
+
+                                      
+                                  #nav-profile.tab-pane.fade(role='tabpanel', aria-labelledby='nav-profile-tab')
+                                    .row
+                                      .col-12
+                                        .table-responsive.table-responsive
+                                          table.table.table-bordered.table-dec
+                                            tbody
+                                              tr
+                                                td.text-weight-bold Наличие
+                                                td На складе
+                                              tr
+                                                td.text-weight-bold Артикул товара
+                                                td 0021
+                                  #nav-contact.tab-pane.fade(role='tabpanel', aria-labelledby='nav-contact-tab')
+                                    .comment
+                                      ul.commen-list
+                                        li.comment-el
+                                          .comment-el-img
+                                            img(src='img/comment-a.jpg', alt='user-img')
+                                          .comment-el-box
+                                            .comment-el-info.justify-content-sm-between
+                                              .comment-el-info-ttl.mr-sm-1 Julie Cortez
+                                            .comment-el-txt.mb-3
+                                              p
+                                                | Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                                            .commen-el-report
+                                              div.comment-date 14 мая 2019, 11:17
+                                              a.btn.btn-small.btn-lighten(href='') Ответить
+                                        li.comment-el.ml-3.ml-md-4
+                                          span.mdi.mdi-reply.mdi-flip-v.recomment-icon
+                                          .comment-el-img
+                                            img(src='img/comment-b.jpg', alt='user-img')
+                                          .comment-el-box
+                                            .comment-el-info.justify-content-sm-between
+                                              .comment-el-info-ttl.mr-sm-1 Philip Pearson
+                                            .comment-el-txt.mb-3
+                                              p
+                                                | Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                                            .commen-el-report
+                                              div.comment-date 14 мая 2019, 11:17
+                                              a.btn.btn-small.btn-lighten(href='') Ответить
+                                        li.comment-el
+                                          .comment-el-img
+                                            img(src='img/comment-a.jpg', alt='user-img')
+                                          .comment-el-box
+                                            .comment-el-info.justify-content-sm-between
+                                              .comment-el-info-ttl.mr-sm-1 Cthutq 12123
+                                            .comment-el-txt.mb-3
+                                              p
+                                                | Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                                            .commen-el-report
+                                              div.comment-date 14 мая 2019, 11:17
+                                              a.btn.btn-small.btn-lighten(href='') Ответить
+                                    .comment-new
+                                      h3.section-title Написать свой отзыв
+                                      .contacts-form-wrapper
+                                        form
+                                          .row
+                                            .col-12
+                                              .comment-new-wrap
+                                                .form-group
+                                                  textarea.form-control.textarea-scrollbar.scrollbar-outer-light.scrollbar-outer(rows='3')
+
+                                                button.btn.btn-dark Написать отзыв
+                    .col-xxl-3
+                      .news-list-small
+                          h5.text-costom Категории новостей
+                          .news-small
+                            .row
+                              .col-12.col-lg-4.col-xxl-12
+                                .news-small-box
+                                  a.news-small-img-link(href="")
+                                    .news-small-img
+                                      img(src="img/news-small.png", alt="news-small")
+                                  .news-small-content
+                                    a.news-small-link(href="") Летние скидки на все наборы карт судьбы
+                                    p Мы решили сделать всем скидки по случаю летнего ..
+                                    .news-small-date
+                                      i.far.fa-calendar-alt
+                                      span 30 мая 2019
+                              .col-12.col-lg-4.col-xxl-12
+                                .news-small-box
+                                  a.news-small-img-link(href="")
+                                    .news-small-img
+                                      img(src="img/news-small.png", alt="news-small")
+                                  .news-small-content
+                                    a.news-small-link(href="") Летние скидки на все наборы карт судьбы
+                                    p Мы решили сделать всем скидки по случаю летнего ..
+                                    .news-small-date
+                                      i.far.fa-calendar-alt
+                                      span 30 мая 2019
+                              .col-12.col-lg-4.col-xxl-12
+                                .news-small-box
+                                  a.news-small-img-link(href="")
+                                    .news-small-img
+                                      img(src="img/news-small.png", alt="news-small")
+                                  .news-small-content
+                                    a.news-small-link(href="") Летние скидки на все наборы карт судьбы
+                                    p Мы решили сделать всем скидки по случаю летнего ..
+                                    .news-small-date
+                                      i.far.fa-calendar-alt
+                                      span 30 мая 2019
+        include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug
+

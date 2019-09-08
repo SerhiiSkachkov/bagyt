@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='plugins/bootstrap/bootstrap.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .main-wrapper
+            
+            include components/header.pug
+                                
+            main.content.content-costom
+                section.page-error
+                    .container
+                        .row
+                            .col-12.text-center
+                                .page-error-box
+                                    .page-error-title.page-error-title-img.text-center(style="background-image: url('./img/error_bg.jpg')") 404
+                                    .page-error-title.page-error-title-shadow.text-center 404
+                            .col-12.text-center.mb-5
+                                h6.text-weight-regular.text-lightgray Страница, которую Вы искали, не существует
+                            .col-12.text-center
+                                a.btn.btn-outline-dark.text-weight-extra-bold(href="") ВЕРНУТЬСЯ НАЗАД
+
+
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

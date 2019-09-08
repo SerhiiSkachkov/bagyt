@@ -1,0 +1,115 @@
+.news-img
+    border-radius: 10px
+
+.news-img:before
+    padding-top: 70%
+
+.news-title
+    margin-bottom: 20px
+    font-size: 24px
+
+.news-preview
+    margin-bottom: 20px
+
+.news-item
+    padding: 20px 0px
+
+.news-more-info
+    display: flex
+    margin-bottom: 20px
+
+.news-more-date
+    margin-right: 15px
+
+.news-more-comment
+    color: black
+    i
+        margin-right: 5px
+
+.news-info
+    padding: 10px 0px
+
+.text-costom 
+    background: -webkit-gradient(linear,left top,right top,color-stop(0,#d6a94a),to(#e0c595))
+    background: linear-gradient(to right,#cda041 0,#e0c595 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.news-nav
+    h5
+        margin-bottom: 20px
+.news-menu
+    display: flex
+    flex-direction: column
+    li
+        margin-bottom: 15px
+        margin-right: 5px
+    a
+        font-size: 16px
+        color: black
+        font-weight: 600
+        padding: 5px 5px
+
+.news-menu li.active> a 
+    background: url(../img/menu-act.png) left bottom no-repeat
+
+@media(min-width: 768px)
+    .news-menu
+        display: flex
+        flex-direction: row
+        flex-flow: wrap
+
+@media(min-width: 1200px)
+    .news-menu
+        display: flex
+        flex-direction: column
+
+.news-content-img
+    margin-bottom: 20px
+    img
+        border-radius: 10px
+
+.news-list-small h5
+    margin-bottom: 15px
+
+.news-small-box
+    display: flex
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: 1px solid #f2f2f2
+
+.news-small-img
+    width: 75px
+    height: 75px
+    margin-right: 15px
+    img
+        width: 75px
+        height: 75px
+        border-radius: 10px
+        overflow: hidden
+        object-fit: cover
+        -o-object-position: 50% 50%
+        object-position: 50% 50%
+        transition: 0.4s
+        &:hover
+            transform: scale(1.02)
+
+.news-small-img:before
+    padding-top: 50%
+
+.news-small-content
+    width: calc(100% - 90px)
+    p
+        margin-bottom: 10px
+.news-small-link
+    font-weight: 700
+    font-size: 16px
+    margin-bottom: 10px
+    color: black
+
+.news-small-date
+    font-weight: 600
+    i
+        margin-right: 10px
+    span
+        font-size: 12px

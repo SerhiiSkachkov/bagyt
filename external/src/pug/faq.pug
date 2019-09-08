@@ -1,0 +1,90 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='plugins/bootstrap/bootstrap.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .main-wrapper
+
+            include components/header.pug
+                                
+            main.content.content-costom
+                section.faq
+                    .container
+                        .row.pb-5
+                            .col-12
+                                nav(aria-label='breadcrumb')
+                                  ol.breadcrumb
+                                    li.breadcrumb-item
+                                      a(href='#') Главная
+                                    li.breadcrumb-item.active(aria-current='page') Вопросы и ответы
+                            .col-12.mb-5
+                                h3 Вопросы и ответы
+                            .col-12.mb-3
+                                #accordion
+                                  .card
+                                    #headingOne.card-header
+                                      a.card-trigger.text-regular(href='', data-toggle='collapse', data-target='#collapse1', aria-expanded='true', aria-controls='collapse1') 
+                                        p Какие документы мне необходимы для получения автомобиля?
+                                        span.far  
+                                    #collapse1.collapse.show(aria-labelledby='heading1', data-parent='#accordion')
+                                      .card-body
+                                        p Чтобы не попасть в затруднительную ситуацию, мы рекомендуем вам всегда иметь при себе водительское удостоверение международного образца + ваше обычное водительское удостоверение. Возраст водителя, который может пользоваться сервисом по прокату автомобилей, — от 21 до 75 лет (возможны исключения). Стаж вождения должен составлять минимум 2 года (в некоторых случаях — 1 год).
+
+                                  .card
+                                    #headingTwo.card-header
+                                      a.card-trigger.text-regular.collapsed(href='', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo') 
+                                        p Какое у меня должно быть водительское удостоверение?
+                                        span.far  
+                                    #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+                                      .card-body
+                                        p Чтобы не попасть в затруднительную ситуацию, мы рекомендуем вам всегда иметь при себе водительское удостоверение международного образца + ваше обычное водительское удостоверение. Возраст водителя, который может пользоваться сервисом по прокату автомобилей, — от 21 до 75 лет (возможны исключения). Стаж вождения должен составлять минимум 2 года (в некоторых случаях — 1 год).
+
+                                  .card
+                                    #headingThree.card-header
+                                      a.card-trigger.text-regular.collapsed(href='', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree') 
+                                        p Могу ли я использовать для оплаты аренды пластиковую карту, оформленную на другое лицо?
+                                        span.far  
+                                    #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+                                      .card-body
+                                        p Чтобы не попасть в затруднительную ситуацию, мы рекомендуем вам всегда иметь при себе водительское удостоверение международного образца + ваше обычное водительское удостоверение. Возраст водителя, который может пользоваться сервисом по прокату автомобилей, — от 21 до 75 лет (возможны исключения). Стаж вождения должен составлять минимум 2 года (в некоторых случаях — 1 год).
+
+                                  .card
+                                    #headingFourth.card-header
+                                      a.card-trigger.text-regular.collapsed(href='', data-toggle='collapse', data-target='#collapseFourth', aria-expanded='false', aria-controls='collapseFourth') 
+                                        p Что мне делать, если я попал в аварию?
+                                        span.far  
+                                    #collapseFourth.collapse(aria-labelledby='headingFourth', data-parent='#accordion')
+                                      .card-body
+                                        p Чтобы не попасть в затруднительную ситуацию, мы рекомендуем вам всегда иметь при себе водительское удостоверение международного образца + ваше обычное водительское удостоверение. Возраст водителя, который может пользоваться сервисом по прокату автомобилей, — от 21 до 75 лет (возможны исключения). Стаж вождения должен составлять минимум 2 года (в некоторых случаях — 1 год).
+                                  .card
+                                    #headingFive.card-header
+                                      a.card-trigger.text-regular.collapsed(href='', data-toggle='collapse', data-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive') 
+                                        p Что мне делать, если я попал в аварию?
+                                        span.far  
+                                    #collapseFive.collapse(aria-labelledby='headingFive', data-parent='#accordion')
+                                      .card-body
+                                        p Чтобы не попасть в затруднительную ситуацию, мы рекомендуем вам всегда иметь при себе водительское удостоверение международного образца + ваше обычное водительское удостоверение. Возраст водителя, который может пользоваться сервисом по прокату автомобилей, — от 21 до 75 лет (возможны исключения). Стаж вождения должен составлять минимум 2 года (в некоторых случаях — 1 год).
+                                  .card
+                                    #headingSix.card-header
+                                      a.card-trigger.text-regular.collapsed(href='', data-toggle='collapse', data-target='#collapseSix', aria-expanded='false', aria-controls='collapseSix') 
+                                        p Что мне делать, если я попал в аварию?
+                                        span.far  
+                                    #collapseSix.collapse(aria-labelledby='headingSix', data-parent='#accordion')
+                                      .card-body
+                                        p Чтобы не попасть в затруднительную ситуацию, мы рекомендуем вам всегда иметь при себе водительское удостоверение международного образца + ваше обычное водительское удостоверение. Возраст водителя, который может пользоваться сервисом по прокату автомобилей, — от 21 до 75 лет (возможны исключения). Стаж вождения должен составлять минимум 2 года (в некоторых случаях — 1 год).
+                            .col-12
+                                a.btn.btn-dark.text-weight-extra-bold(href="") Задать свой вопрос
+
+            include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug

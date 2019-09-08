@@ -1,0 +1,312 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='plugins/bootstrap/bootstrap.css')
+        link(rel='stylesheet' href='plugins/select2/select2.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .main-wrapper
+            include components/header.pug
+            main.content
+                section.cart-list.pb-5
+                    .container
+                        .row
+                          .col-12
+                                nav(aria-label='breadcrumb')
+                                  ol.breadcrumb
+                                    li.breadcrumb-item
+                                      a(href='#') Главная
+                                    li.breadcrumb-item.active(aria-current='page') Магазин
+                          .col-12
+                            .row
+                              .col-12.col-xl-3.order-xl-2
+                                  .row
+                                    .col-md-4.col-xl-12
+                                      .form-group
+                                        .input-group.input-group-search.mb-3
+                                          input.form-control(type='text', placeholder="Поиск", aria-label="Recipient's username", aria-describedby='button-addon2')
+                                          .input-group-append
+                                            button#button-addon2.btn.btn-outline-secondary(type='button')
+                                              i.fas.fa-search.text-black(aria-hidden='true')
+                                    .col-md-4.col-xl-12
+                                      .form-group
+                                        select.form-control.js-select
+                                          option По рейтингу
+                                          option По рейтингу
+                                          option По рейтингу
+                                          option По рейтингу
+                                          option По рейтингу
+                                    .col-md-4.col-xl-12
+                                      .form-group
+                                        select.form-control.js-select
+                                          option Показать 100
+                                          option Показать 100
+                                          option Показать 100
+                                          option Показать 100
+                                          option Показать 100
+                                    .col-12.d-none.d-xxl-block
+                                      .news-list-small
+                                        h5.text-costom Новости
+                                        .news-small
+                                          .row
+                                            .col-12.col-lg-4.col-xl-12
+                                              .news-small-box
+                                                a.news-small-img-link(href="")
+                                                  .news-small-img
+                                                    img(src="./img/news-small.png", alt="news-small")
+                                                .news-small-content
+                                                  a.news-small-link(href="") Летние скидки на все наборы карт судьбы
+                                                  p Мы решили сделать всем скидки по случаю летнего ..
+                                                  .news-small-date
+                                                    i.far.fa-calendar-alt
+                                                    span 30 мая 2019
+                                            .col-12.col-lg-4.col-xl-12
+                                              .news-small-box
+                                                a.news-small-img-link(href="")
+                                                  .news-small-img
+                                                    img(src="./img/news-small.png", alt="news-small")
+                                                .news-small-content
+                                                  a.news-small-link(href="") Летние скидки на все наборы карт судьбы
+                                                  p Мы решили сделать всем скидки по случаю летнего ..
+                                                  .news-small-date
+                                                    i.far.fa-calendar-alt
+                                                    span 30 мая 2019
+                                            .col-12.col-lg-4.col-xl-12
+                                              .news-small-box
+                                                a.news-small-img-link(href="")
+                                                  .news-small-img
+                                                    img(src="./img/news-small.png", alt="news-small")
+                                                .news-small-content
+                                                  a.news-small-link(href="") Летние скидки на все наборы карт судьбы
+                                                  p Мы решили сделать всем скидки по случаю летнего ..
+                                                  .news-small-date
+                                                    i.far.fa-calendar-alt
+                                                    span 30 мая 2019
+                              .col-xl-9.order-xl-1
+                                .row
+                                  .col-12.col-sm-6.col-lg-4.col-xl-4
+                                    .cart-el
+                                      .cart-badge.cart-badge-new Новинка                               
+                                      a.cart-img.embed-responsive(href='')
+                                        img.embed-responsive-item(src='./img/cart-list.jpg', alt='product')
+                                      .cart-product-info
+                                        .cart-name Набор Женский
+                                        p.text-size-small Готовый набор для создания Вашей индивидуальной карты судьбы
+                                        .cart-price
+                                          .cart-rating
+                                            .rating-numb 4.1
+                                            ul.rating
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star.text-light-gray
+                                          .cart-pay.text-costom 11 900 тг 
+                                        .car-by-box
+                                          .cart-by-btn
+                                            a.btn-wrap.btn-wrap-iversed.text-weight-bold.btn-icon(href="")
+                                              .btn-content.text-weight-bold                
+                                                  | В корзину
+                                                  i.ml-3.far.fa-shopping-bag
+                                  .col-12.col-sm-6.col-lg-4.col-xl-4
+                                    .cart-el
+                                      .cart-badge.cart-badge-new Новинка                               
+                                      a.cart-img.embed-responsive(href='')
+                                        img.embed-responsive-item(src='./img/cart-list.jpg', alt='product')
+                                      .cart-product-info
+                                        .cart-name Набор Женский
+                                        p.text-size-small Готовый набор для создания Вашей индивидуальной карты судьбы
+                                        .cart-price
+                                          .cart-rating
+                                            .rating-numb 4.1
+                                            ul.rating
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.far.fa-star
+                                          .cart-pay.text-costom 11 900 тг 
+                                        .car-by-box
+                                          .cart-by-btn
+                                            a.btn-wrap.btn-wrap-iversed.text-weight-bold.btn-icon(href="")
+                                              .btn-content.text-weight-bold                
+                                                  | В корзину
+                                                  i.ml-3.far.fa-shopping-bag
+                                  .col-12.col-sm-6.col-lg-4.col-xl-4
+                                    .cart-el
+                                      .cart-badge.cart-badge-new Новинка                           
+                                      a.cart-img.embed-responsive(href='')
+                                        img.embed-responsive-item(src='./img/cart-list.jpg', alt='product')
+                                      .cart-product-info
+                                        .cart-name Набор Женский
+                                        p.text-size-small Готовый набор для создания Вашей индивидуальной карты судьбы
+                                        .cart-price
+                                          .cart-rating
+                                            .rating-numb 4.1
+                                            ul.rating
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.far.fa-star
+                                          .cart-pay.text-costom 11 900 тг 
+                                        .car-by-box
+                                          .cart-by-btn
+                                            a.btn-wrap.btn-wrap-iversed.text-weight-bold.btn-icon(href="")
+                                              .btn-content.text-weight-bold                
+                                                  | В корзину
+                                                  i.ml-3.far.fa-shopping-bag
+                                  .col-12.col-sm-6.col-lg-4.col-xl-4
+                                    .cart-el
+                                      .cart-badge.cart-badge-new Новинка                           
+                                      a.cart-img.embed-responsive(href='')
+                                        img.embed-responsive-item(src='./img/cart-list.jpg', alt='product')
+                                      .cart-product-info
+                                        .cart-name Набор Женский
+                                        p.text-size-small Готовый набор для создания Вашей индивидуальной карты судьбы
+                                        .cart-price
+                                          .cart-rating
+                                            .rating-numb 4.1
+                                            ul.rating
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.far.fa-star
+                                          .cart-pay.text-costom 11 900 тг 
+                                        .car-by-box
+                                          .cart-by-btn
+                                            a.btn-wrap.btn-wrap-iversed.text-weight-bold.btn-icon(href="")
+                                              .btn-content.text-weight-bold                
+                                                  | В корзину
+                                                  i.ml-3.far.fa-shopping-bag
+                                  .col-12.col-sm-6.col-lg-4.col-xl-4
+                                    .cart-el
+                                      .cart-badge.cart-badge-new Новинка                           
+                                      a.cart-img.embed-responsive(href='')
+                                        img.embed-responsive-item(src='./img/cart-list.jpg', alt='product')
+                                      .cart-product-info
+                                        .cart-name Набор Женский
+                                        p.text-size-small Готовый набор для создания Вашей индивидуальной карты судьбы
+                                        .cart-price
+                                          .cart-rating
+                                            .rating-numb 4.1
+                                            ul.rating
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.far.fa-star
+                                          .cart-pay.text-costom 11 900 тг 
+                                        .car-by-box
+                                          .cart-by-btn
+                                            a.btn-wrap.btn-wrap-iversed.text-weight-bold.btn-icon(href="")
+                                              .btn-content.text-weight-bold                
+                                                  | В корзину
+                                                  i.ml-3.far.fa-shopping-bag
+                                  .col-12.col-sm-6.col-lg-4.col-xl-4
+                                    .cart-el
+                                      .cart-badge.cart-badge-new Новинка                           
+                                      a.cart-img.embed-responsive(href='')
+                                        img.embed-responsive-item(src='./img/cart-list.jpg', alt='product')
+                                      .cart-product-info
+                                        .cart-name Набор Женский
+                                        p.text-size-small Готовый набор для создания Вашей индивидуальной карты судьбы
+                                        .cart-price
+                                          .cart-rating
+                                            .rating-numb 4.1
+                                            ul.rating
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.fas.fa-star
+                                              li
+                                                i.far.fa-star
+                                          .cart-pay.text-costom 11 900 тг 
+                                        .car-by-box
+                                          .cart-by-btn
+                                            a.btn-wrap.btn-wrap-iversed.text-weight-bold.btn-icon(href="")
+                                              .btn-content.text-weight-bold                
+                                                  | В корзину
+                                                  i.ml-3.far.fa-shopping-bag
+
+                              .col-12.d-xxl-none.order-xl-3
+                                .news-list-small
+                                  h5.text-costom Новости
+                                  .news-small
+                                    .row
+                                      .col-12.col-lg-4.col-xl-12
+                                        .news-small-box
+                                          a.news-small-img-link(href="")
+                                            .news-small-img
+                                              img(src="./img/news-small.png", alt="news-small")
+                                          .news-small-content
+                                            a.news-small-link(href="") Летние скидки на все наборы карт судьбы
+                                            p Мы решили сделать всем скидки по случаю летнего ..
+                                            .news-small-date
+                                              i.far.fa-calendar-alt
+                                              span 30 мая 2019
+                                      .col-12.col-lg-4.col-xl-12
+                                        .news-small-box
+                                          a.news-small-img-link(href="")
+                                            .news-small-img
+                                              img(src="./img/news-small.png", alt="news-small")
+                                          .news-small-content
+                                            a.news-small-link(href="") Летние скидки на все наборы карт судьбы
+                                            p Мы решили сделать всем скидки по случаю летнего ..
+                                            .news-small-date
+                                              i.far.fa-calendar-alt
+                                              span 30 мая 2019
+                                      .col-12.col-lg-4.col-xl-12
+                                        .news-small-box
+                                          a.news-small-img-link(href="")
+                                            .news-small-img
+                                              img(src="./img/news-small.png", alt="news-small")
+                                          .news-small-content
+                                            a.news-small-link(href="") Летние скидки на все наборы карт судьбы
+                                            p Мы решили сделать всем скидки по случаю летнего ..
+                                            .news-small-date
+                                              i.far.fa-calendar-alt
+                                              span 30 мая 2019
+        include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug
+

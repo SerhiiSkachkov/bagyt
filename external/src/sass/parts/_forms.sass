@@ -1,0 +1,187 @@
+.form-control
+    border-radius: 0px
+    padding: 14px 20px
+    height: 51px
+    border-width: 2px
+    border-color: #f0f2f4
+    &:focus
+        box-shadow: none
+        border-color: #f0f2f4
+        border-bottom: 2px solid black!important
+
+.form-control-text-areas
+    resize: auto
+    max-width: 570px
+    height: 51px
+    min-height: 51px!important
+    width: 100%!important
+
+.textarea-scrollbar
+    &:focus
+        box-shadow: none
+        border-color: #f0f2f4
+        border-bottom: 2px solid black!important
+
+.input-group-costom
+    .form-control
+        border-color: #f0f2f4
+
+@media(max-width: 576px)
+    .input-group-costom
+        .btn
+            padding: 13px 15px        
+
+.form-control-shadow
+    box-shadow: -2px 9px 22px -6px rgba(0,0,0,0.21)
+
+.form-control-scroll
+    height: 70px
+    border: 2px solid #f0f2f4!important
+    min-height: 50px!important
+    padding: 0px
+    resize: auto
+
+.form-control-text-area
+    min-height: 125px
+    
+.scroll-textarea > .scroll-content > textarea
+    padding: 17px!important
+
+.custom-control 
+    padding-left: 20px
+
+.custom-control-label 
+    cursor: pointer
+    font-size: 14px
+    color: #757575
+    a
+        color: black
+
+.custom-control-label::before 
+    top: 2px
+    left: -20px
+    width: 15px
+    height: 15px
+    background-color: transparent
+    border: 1px solid #d6a94a
+    pointer-events: auto
+
+.custom-control-label:focuse::before 
+    outline: none
+    border: 1px solid #d6a94a
+
+.custom-control-label::after 
+    content: none
+    top: 7px
+    left: -15px
+    width: 5px
+    height: 5px
+    background-color: transparent
+    border: 1px solid #d6a94a
+
+.custom-control-input:checked~.custom-control-label::before 
+    color: #fff
+    border-color: #d6a94a
+    background-color: #d6a94a
+
+.custom-control-input:active~.custom-control-label::before 
+    background-color: transparent
+
+.custom-check .custom-control-label::before,
+.custom-check .custom-control-label::after 
+    border-radius: 50%
+
+.custom-checkbox .custom-control-label::after 
+    content: ''
+    width: 15px
+    height: 15px
+    top: 4px
+    left: -20px
+    border: none
+
+.custom-check .custom-control-input:checked~.custom-control-label::after 
+    content: ''
+
+.custom-check .custom-control-input:checked~.custom-control-label::before 
+    background-color: transparent
+
+.custom-control 
+    padding-left: 20px
+
+.custom-control-label 
+    cursor: pointer
+    font-size: 14px
+
+.custom-control-label::before 
+    top: 1px
+    left: -20px
+    width: 15px
+    height: 15px
+    background-color: transparent
+    border: 1px solid #d6a94a
+    pointer-events: auto
+
+.custom-control-label:focus::before 
+    outline: none
+    border: 1px solid #d6a94a
+
+.custom-control-label::after 
+    content: none
+    top: 6px
+    left: -15px
+    width: 5px
+    height: 5px
+    background-color: transparent
+    border: 1px solid #d6a94a
+
+.custom-control-input:checked~.custom-control-label::before 
+    color: #fff
+    border-color: #d6a94a
+    background-color: #d6a94a
+
+.custom-control-input:active~.custom-control-label::before 
+    background-color: transparent
+
+.custom-radio .custom-control-label::before,
+.custom-radio .custom-control-label::after 
+    border-radius: 50%
+
+.custom-checkbox .custom-control-label::after 
+    content: ''
+    width: 15px
+    height: 15px
+    top: 4px
+    left: -20px
+    border: none
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after 
+    content: ''
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before 
+    background-color: transparent
+
+.input-group-search
+    input:focus 
+        & ~ div > .btn
+            border-bottom-color: black!important
+    .btn
+        padding: 14px 20px!important
+        border-left: transparent
+        &:hover
+            background-color: #f0f2f4!important
+            border-color: #f0f2f4!important
+        &:active
+            background-color: #f0f2f4!important
+            border-color: #f0f2f4!important
+        &:focus
+            background-color: #f0f2f4!important
+            border-color: #f0f2f4!important       
+        i
+            color: #bababa!important
+            font-size: 16px
+            font-weight: 500
+
+.textarea-scrollbar
+    min-height: 150px
+    border: none
+    border-bottom: 1px solid #f0f2f4

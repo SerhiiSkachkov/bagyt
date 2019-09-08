@@ -1,0 +1,196 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel="stylesheet" type="text/css" href="./css/slick.css")
+        link(rel="stylesheet" type="text/css" href="./css/slick-theme.css")
+        link(rel="stylesheet" type="text/css" href="./css/jquery.scrollbar.css")
+        link(rel='stylesheet' href='plugins/bootstrap/bootstrap.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .main-wrapper
+            include components/header.pug
+            main.content
+              section.basket.mb20
+                .container
+                  .row
+                    .col-12.mb20
+                      nav(aria-label='breadcrumb')
+                        ol.breadcrumb
+                          li.breadcrumb-item
+                            a(href='#') Главная
+                          li.breadcrumb-item.active(aria-current='page') Корзина
+                    .col-12.mb-3
+                      .row
+                        .col-lg-9
+                            .table-responsive-lg.mb-4
+                              table.table.border-bottom
+                                thead.table-warning.table-lg-thead
+                                  tr
+                                    th(scope="col").text-weight-bold.border-bottom-0  
+                                    th(scope="col").text-weight-bold.border-bottom-0
+                                      p.mb-0 Наименование товара
+                                    th(scope="col").text-weight-bold.border-bottom-0
+                                      p.mb-0 Цена.тг
+                                    th(scope="col").text-weight-bold.border-bottom-0
+                                      p.mb-0 Количество
+                                    th(scope="col").text-weight-bold.border-bottom-0
+                                      p.mb-0 Итоговая сумма
+                                tbody
+                                  tr
+                                    td(style='vertical-align: middle; text-align: center;')
+                                      a.btn-del(href='')
+                                        i.fas.fa-times
+                                    td(style='vertical-align: middle; text-align: left;')
+                                      a.bascket-order.text-black(href='')
+                                        span.table-basket-img.mr-3
+                                          img(src='./img/basket.jpg', alt='basket-img')
+                                        span Набор Женский
+                                    td(style='vertical-align: middle; font-weight: 500;')
+                                      div 11 900
+                                    td(style='vertical-align: middle;')
+                                      span.count
+                                        button.btn-count.btn-count--minus.js-qty__adjust.js-qty__adjust--minus -
+                                        input.count-cotrols.js-qty__num(type='number', value='10')
+                                        button.btn-count.btn-count--plus.js-qty__adjust.js-qty__adjust--plus +
+                                    td(style='vertical-align: middle;')
+                                      div 11 900
+                        .col-lg-3
+                          .basket-inform.ml-lg-auto
+                            h3 1 позиция в корзине
+                              br
+                              | на сумму
+                            .basket-gif
+                              i.far.fa-gift
+                            .basket-price.text-costom 11 900 тг
+                            a.btn.btn-outline-secondary.btn-icon.text-weight-bold(href="") 
+                              | Продолжить покупки
+                              i.ml-3.far.fa-shopping-bag
+                  .basket-order
+                    .row
+                      .col-12.mb-3
+                        h3 Детали заказа
+                      .col-12
+                        a.controls-head.d-flex(data-toggle='collapse', href='#collapseExample', role='button', aria-expanded='false', aria-controls='collapseExample')
+                          p.text-weight-bold Контактные данные для оформления заказа
+                          i.far.fa-chevron-down.ml-3
+                        #collapseExample.collapse.collapse-box
+                          div
+                            .row
+                              .col-12.col-lg-6
+                                .row
+                                  .col-12
+                                    h6.text-weight-bold Личные данные
+                                  .col-md-6.col-lg-6
+                                    .form-group
+                                      input.form-control(type='text', placeholder='Логин *')
+                                  .col-md-6.col-lg-6
+                                    .form-group
+                                      input.form-control(type='text', placeholder='Фамилия *')
+                                  .col-md-6.col-lg-6
+                                    .form-group
+                                      input.form-control(type='text', placeholder='Имя *')
+                                  .col-md-6.col-lg-6
+                                    .form-group
+                                      input.form-control(type='text', placeholder='Отчество *')
+                              .col-12.col-lg-6
+                                .row
+                                  .col-12
+                                    h6.text-weight-bold Контактные данные
+                                  .col-md-6.col-lg-6
+                                      .form-group
+                                        input.form-control(type='text', placeholder='E-mail *')
+                  .basket-pay
+                    .row
+                      .col-12
+                        a.controls-head.d-flex(data-toggle='collapse', href='#collapseExample1', role='button', aria-expanded='false', aria-controls='collapseExample')
+                          p.text-weight-bold Способ оплаты и доставки
+                          i.far.fa-chevron-down.ml-3
+                        #collapseExample1.collapse.collapse-box
+                          div
+                            .row
+                              .col-12.col-lg-5
+                                .row
+                                  .col-12
+                                    h6.text-weight-bold Выберите способ оплаты
+                                    .form-group
+                                      .custom-control.custom-check.custom-control-inline
+                                        input#anonymity1.custom-control-input(type='radio', name='anonymityradio', value='0')
+                                        label.custom-control-label(for='anonymity1') Оплатить с помощью платежной системы «PerfectMoney»
+
+                                    .form-group
+                                      .custom-control.custom-check.custom-control-inline
+                                        input#anonymity2.custom-control-input(type='radio', name='anonymityradio', value='0')
+                                        label.custom-control-label(for='anonymity2') Оплатить с помощью платежной системы «Интеркасса»
+
+                                    .form-group
+                                      .custom-control.custom-check.custom-control-inline
+                                        input#anonymity3.custom-control-input(type='radio', name='anonymityradio', value='0')
+                                        label.custom-control-label(for='anonymity3') Оплатить с помощью платежной системы «PayPal»
+
+                                    .form-group
+                                      .custom-control.custom-check.custom-control-inline
+                                        input#anonymity4.custom-control-input(type='radio', name='anonymityradio', value='0')
+                                        label.custom-control-label(for='anonymity4') Оплатить с помощью платежной системы «Payeer»
+
+                              .col-12.col-lg-3
+                                .row
+                                  .col-12
+                                    h6.text-weight-bold Выберите способ доставки
+
+                                    .form-group
+                                      .custom-control.custom-check.custom-control-inline
+                                        input#anonymity5.custom-control-input(type='radio', name='anonymityradi1o', value='0')
+                                        label.custom-control-label(for='anonymity5') Курьерская служба - бесплатно
+
+                                    .form-group
+                                      .custom-control.custom-check.custom-control-inline
+                                        input#anonymity6.custom-control-input(type='radio', name='anonymityradi1o', value='0')
+                                        label.custom-control-label(for='anonymity6') Поста России - бесплатно
+
+                                    .form-group
+                                      .custom-control.custom-check.custom-control-inline
+                                        input#anonymity7.custom-control-input(type='radio', name='anonymityradi1o', value='0')
+                                        label.custom-control-label(for='anonymity7') Самовывоз - бесплатно
+
+                              .col-12.col-lg-4
+                                .row
+                                  .col-12
+                                    h6.text-weight-bold Дополнительная информация
+                                    .form-group
+                                      textarea.form-control.form-control-text-area()
+                  .bascet-details
+                    .row
+                      .col-12.mb-3
+                        h3 Итого к оплате
+                      .col-md-6
+                        table.table.table-bordered 
+                          tbody
+                            tr
+                              td(style='font-weight: bold') Сумма, тг
+                              td(style='vertical-align: middle; text-align: right;') 11 900
+                            tr
+                              td(style='font-weight: bold') Стоимость доставки
+                              td(style='vertical-align: middle; text-align: right;') 0
+                            tr
+                              td(style='font-weight: bold') Общая стоимость, тг
+                              td(style='vertical-align: middle; text-align: right;') 11 900
+                    a.btn-wrap.btn-wrap-iversed.text-weight-bold.btn-icon(href="")
+                      .btn-content                 
+                          | Оплатить покупку
+                          i.far.fa-wallet.ml-3
+
+
+
+        include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug
+

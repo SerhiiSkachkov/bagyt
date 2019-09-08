@@ -1,0 +1,68 @@
+// Font
+@mixin font($font-s, $font-h) 
+    font-size: $font-s
+    line-height: $font-h
+
+// Border-radius
+@mixin radius($border-radius) 
+  -webkit-border-radius: $border-radius
+     -moz-border-radius: $border-radius      
+          border-radius: $border-radius
+
+// Button
+@mixin button($button-bg, $button-border, $button-border-color, $button-pad, $button-size, $button-line-height, $height-button, $button-radius) 
+    display: inline-block
+    vertical-align: top
+    margin: 0 0 0 0
+    padding: 10px $button-pad 0 $button-pad
+    background: $button-bg
+    border: $button-border solid $button-border-color
+    font-size: $button-size
+    line-height: $button-line-height
+    height: $height-button
+    position: relative
+
+// Trnsition
+@mixin transition($default-transition) 
+  -webkit-transition: $default-transition
+     -moz-transition: $default-transition
+      -ms-transition: $default-transition
+       -o-transition: $default-transition
+          transition: $default-transition
+
+// Center block
+@mixin center-block()
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+// Absolute centering for the div with known dimensions
+@mixin absolute-center()
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+
+// Absolute centering on X and Y axises
+@mixin x-y-center()
+  transform: translate3d(-50%, -50%, 0)
+  margin-top: 50%
+  margin-left: 50%
+
+// Absolute centering on Y axis
+@mixin y-center()
+  transform: translateY(-50%)
+  margin-top: 50%
+
+// Placeholder text
+@mixin placeholder
+  &::-webkit-input-placeholder
+  @content
+  &:-moz-placeholder
+  @content
+  &::-moz-placeholder
+  @content
+  &:-ms-input-placeholder
+  @content

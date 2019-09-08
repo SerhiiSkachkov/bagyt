@@ -1,0 +1,113 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel="stylesheet" type="text/css" href="./css/slick.css")
+        link(rel="stylesheet" type="text/css" href="./css/slick-theme.css")
+        link(rel="stylesheet" type="text/css" href="./css/jquery.scrollbar.css")
+        link(rel='stylesheet' href='plugins/bootstrap/bootstrap.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .main-wrapper
+            include components/header.pug
+            main.content
+              section.basket.mb20
+                .container
+                  .row
+                    .col-12.mb20
+                      nav(aria-label='breadcrumb')
+                        ol.breadcrumb
+                          li.breadcrumb-item
+                            a(href='#') Главная
+                          li.breadcrumb-item
+                            a(href='#') Новости
+                          li.breadcrumb-item.active(aria-current='page') Поворотный пункт. Как преодолеть личный кризис вкарьере
+                  .row
+                    .col-12.col-xl-3
+                      .news-nav
+                        h5.text-costom Категории новостей
+                        ul.news-menu
+                          li.active
+                            a(href='#') Все новости
+                          li
+                            a(href='#') Новости компании
+                          li
+                            a(href='#') Новинки продукции
+                          li
+                            a(href='#') Мотивация
+                          li
+                            a(href='#') Красота и здоровье
+                          li
+                            a(href='#') Модные тенденции
+                    .col-12.col-xl-9.order-xl-first
+                      .news-item
+                        .row
+                          .col-12
+                              h3.news-title Поворотный пункт. Как преодолеть личный кризис в карьере
+                              .news-more-info
+                                .news-more-date 12 мая, 12:45
+                                a.news-more-comment(href="")
+                                  i.fal.fa-comment-lines
+                                  span 2
+                              p.mb-3 Если случается кризис одной карьеры, возможно, это повод начать другую?
+                              p.mb-3 Какие у вас возникают первые ассоциации со словом «кризис»? Когда я задаю этот вопрос на тренингах, более 90% участников говорят о негативных мыслях и образах.
+                          .col-12
+                              .news-content-img
+                                img(src="./img/news.jpg", alt="news-list")
+                              p.mb-3 А между тем слово «кризис» на древнегреческом означало решение, поворотный пункт. Да, сейчас это слово используют для обозначения состояния, при котором невозможно продолжать находиться в ситуации без изменений. Но мы попробуем изменить парадигму и вернуться в Древнюю Грецию.
+
+                              p.mb-3 Карьерный рост — распространенная цель для многих. С каждым годом становится все больше тех, кто ставит на первое место в пирамиде приоритетов именно успех в работе, оставляя на вторых ролях семью и друзей. Известный шведский футуролог Кьелл Нордстрем, автор бестселлера «Бизнес в стиле Funk», говорит о том, что миром будут править одинокие женщины-карьеристки за сорок. Посмотрим, может, так и будет. Однако мечты о красивой карьере зачастую носят абстрактный характер.
+
+                              p.mb-3 Часто участники бизнес-тренингов и коучинг-сессий говорят, что хотят зарабатывать много денег или хотят быть известными. И если задать встречные вопросы: «Сколько денег вам нужно? Известным в какой сфере вы хотите стать?» — ответа можно и не получить.
+
+                              p.mb-3 Сделайте мечту о карьере очень конкретной. Например, открою модное ателье шляп в Ницце, или стану экспертом в области корпоративных финансов в строительных компаниях Казахстана. На рынке появляются все новые и новые профессии. Аналитики Big Data востребованы как никогда. Искусственный интеллект, дизайн-мышление, технологии Agile вызывают интерес у владельцев компаний. Может, попробовать себя в этом? Например, один из выпускников EMBA Михаил Кривонос всегда стремился к воплощению шведских ценностей в России и к помощи людям. В итоге он возглавил проект работа-i, благодаря которому люди с ограниченными возможностями могут найти работу.
+
+                              p.mb-3 Наконец, вы придумали, какую карьеру хотите построить.
+                      .comment
+                        h4.mb-4 Комментарии
+                        ul.commen-list
+                          li.comment-el
+                            .comment-el-img
+                              img(src='img/comment-a.jpg', alt='user-img')
+                            .comment-el-box
+                              .comment-el-info.justify-content-sm-between
+                                .comment-el-info-ttl.mr-sm-1 Julie Cortez
+                              .comment-el-txt.mb-3
+                                p Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                              .commen-el-report
+                                div.comment-date 14 мая 2019, 11:17
+                                a.btn.btn-small.btn-lighten(href='') Ответить
+                          li.comment-el.ml-3.ml-md-4
+                            span.mdi.mdi-reply.mdi-flip-v.recomment-icon
+                            .comment-el-img
+                              img(src='img/comment-b.jpg', alt='user-img')
+                            .comment-el-box
+                              .comment-el-info.justify-content-sm-between
+                                .comment-el-info-ttl.mr-sm-1 Philip Pearson
+                              .comment-el-txt.mb-3
+                                p Eos id timeam meliore, assentior deseruisse necessitatibus vis id. Et consectetuer reprehendunt his, virtute praesent te nam. An mea volumus maluisset theophrastus consectetuer.
+                              .commen-el-report
+                                div.comment-date 14 мая 2019, 11:17
+                                a.btn.btn-small.btn-lighten(href='') Ответить
+                      .comment-new
+                        h4.mb-4 Написать комментарий
+                        .contacts-form-wrapper
+                          form
+                            .row
+                              .col-12
+                                .comment-new-wrap
+                                  .form-group
+                                    textarea.form-control.textarea-scrollbar.scrollbar-outer-light.scrollbar-outer(rows='3')
+                                  button.btn.btn-dark Комментировать
+        include components/footer.pug                 
+        a.scroll.js-scroll(href="")
+            span    
+        include components/script.pug
+

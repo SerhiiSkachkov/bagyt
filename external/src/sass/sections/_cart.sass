@@ -1,0 +1,241 @@
+//faq
+.card
+    margin-bottom: 20px
+    border: none
+    border-radius: 0px
+    &-header
+        background-color: transparent
+        padding: 0px
+        border-bottom: none
+        border-radius: 10px!important
+    &-body p:last-child
+        margin-bottom: 0px
+
+.card-trigger
+    color: white
+    padding: 20px 20px
+    border-radius: 8px
+    background: linear-gradient(to left,#d6a94a 0,#e6bd6d 100%)
+    font-weight: bold
+    text-decoration: none
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: flex-start
+    font-size:  16px
+    box-shadow: -2px 4px 21px 3px #e0c595
+    p
+        margin-bottom: 0px
+    span
+        font-weight: 700
+        padding-right: 10px
+        transform: rotate(180deg)!important
+        &:before
+            content: "\f077"
+            font-family: 'Font Awesome 5 Pro'
+    &:hover
+        color: white
+        box-shadow: 1px 2px 14px 0px rgba(233,233,234,1)
+
+.card-trigger.collapsed 
+    background: white
+    color: #cc9933
+    box-shadow: 1px 2px 14px 0px rgba(233,233,234,1)
+    &:hover
+        background: linear-gradient(to left,#d6a94a 0,#e3bc77 100%)
+        color: white
+    span
+        transform: rotate(0deg)
+        font-weight: 700
+        &:before
+            content: "\f078"
+
+.cart-el
+    position: relative
+    transition: 0.5s
+    border-radius: 5px 5px 10px 10px
+    margin-bottom: 30px
+    border: 1px solid #f2f3f5
+
+.cart-el:hover
+    box-shadow: 0px 3px 54px -13px rgba(0,0,0,0.75)
+
+.cart-badge
+    z-index: 10
+    position: absolute
+    display: inline-block
+    padding: 15px 15px
+    top: 0px
+    left: 0px
+    color: white
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    background: linear-gradient(to right,#d6a94a 0,#e0c595 100%)
+    border-radius: 6px 0px 10px 0px
+
+.cart-product-info
+    padding: 10px 20px
+
+.cart-img
+    margin-bottom: 5px
+    overflow: hidden
+    border-radius: 6px 6px 0px 0px
+
+.cart-img:before
+    content: ''
+    padding-top: 85%
+
+.cart-img img 
+    width: 100%
+
+.cart-name
+    font-weight: bold
+    font-size: 18px
+    margin-bottom: 10px
+
+.cart-pay
+    font-weight: bold
+    font-size: 22px
+
+.cart-pay-old
+    color: #8e939d
+    position: relative
+    font-size: 14px
+
+.cart-pay-old:after
+    content: ''
+    position: absolute
+    top: calc(50% - 1px)
+    width: 100%
+    left: 0px
+    right: 0px
+    background-color: #8e939d
+    display: block
+    height: 1px
+
+.cart-pay-sale
+    color: #ee4f4f
+
+.cart-price
+    display: flex
+    justify-content: space-between
+    margin-bottom: 10px
+    align-items: center
+
+.cart-price-old
+    position: relative
+    color: #34373d
+
+.cart-price-old:after
+    content: ''
+    position: absolute
+    top: calc(50% - 1px)
+    width: 100%
+    left: 0px
+    right: 0px
+    background-color: #34373d
+    display: block
+    height: 1px
+
+.card-body
+    padding-bottom: 0px
+
+.cart-rating
+    display: flex
+    align-items: baseline
+    .rating-numb
+        color: #d4a445
+        font-size: 13px
+        font-weight: bold
+        margin-right: 5px
+
+.cart-rating-box
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-bottom: 10px
+
+.cart-by-click
+    width: 100%
+
+.car-by-box
+    text-align: center
+
+.input-group-search
+    input
+        border-right: none
+
+.cart-preview
+    margin-bottom: 10px
+    border-radius: 7px
+    overflow: hidden
+
+.cart-priview-sm
+    margin-left: -5px
+    margin-right: -5px
+    margin-bottom: 10px
+
+.cart-peiview-el-sm
+    margin-left: 5px
+    margin-right: 5px
+    border-radius: 7px
+    overflow: hidden   
+.cart-info-box
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-flow: wrap
+    margin-bottom: 10px
+
+.cart-info-txt
+    margin-bottom: 20px
+
+.cart-price
+    font-size: 30px
+    font-weight: bold
+    margin-bottom: 10px
+    margin-right: 10px
+
+.cart-btn-box
+.car-by-box
+    padding: 20px 0px
+    z-index: 15
+    display: none
+    position: absolute
+    bottom: -70px
+    background-color: white
+    width: calc(100% + 2px)
+    left: -1px
+    right: -1px
+    border-radius: 0px 0px 10px 10px
+    border: 1px solid #f2f3f5
+    border-top: none!important
+    transition: 0.4s
+
+.cart-product-info
+    position: relative
+
+.cart-el:hover 
+    .cart-product-info > .car-by-box
+        display: block
+
+.cart-el:hover 
+    box-shadow: 0 2px 35px -20px rgba(0,0,0,.75)
+
+.cart-preview 
+    .cart-previeew-el-img img
+        height: 300px
+        object-fit: cover
+
+.cart-priview-sm
+    .cart-previeew-el-img img
+        height: 80px
+        object-fit: cover
+
+.cart-by-click .btn-lighten
+    color: rgba(117, 117, 117, 255)
+
+.cart-rating .rating-numb
+    @media(min-width: 768px)
+        font-size:  16px

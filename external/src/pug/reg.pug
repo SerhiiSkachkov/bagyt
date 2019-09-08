@@ -1,0 +1,61 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="shortcut icon" href="" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel='stylesheet' href='plugins/bootstrap/bootstrap.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title EmpireHome
+    body
+        .main-wrapper        
+            main.content
+                section.auth
+                        .auth-block
+                            .auth-img(style="background-image: url(./img/auth.jpg)")
+                            .auth-form-block
+                                .auth-form
+                                    a.logo.mb-5(href="")
+                                         img(src="img/Logo.png", alt="logo")
+                                    h3.text-costom.mb-4 Регистрация
+                                    div.mb-4
+                                        p Есть аккаунт? 
+                                            strong Авторизуйтесь!
+                                    form.mb-4
+                                      .form-group
+                                        input.form-control(type='text', placeholder='Имя *')
+                                      .form-group
+                                        input.form-control(type='text', placeholder='Е-mail *')
+                                      .form-group
+                                        input.form-control(type='text', placeholder='Номер телефона *')
+                                      .form-group
+                                        input.form-control(type='text', placeholder='Пароль *') 
+                                      .form-group
+                                        input.form-control(type='text', placeholder='Повторите пароль *')                                            
+                                      .form-group.d-flex.justify-content-between
+                                        <div class="custom-control custom-check custom-control-inline">
+                                            <input type="checkbox" id="anonymityNo" name="anonymityradio" class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="anonymityNo">Я принимаю условия 
+                                                a.text-weight-bold(href="") соглашения 
+                                                |  пользования сайта
+                                            </label>
+                                        </div>
+                                      <a class="btn-wrap btn-wrap-iversed text-weight-bold" href="#"> 
+                                        <div class="btn-content">Зарегистрироваться</div></a>
+                                    div
+                                        p.mb-3 Другие способы регистрации
+                                        ul.social-list.social-list-costom
+                                            li
+                                                a(href="https://www.facebook.com/Bagyt-mdb-new-341508223068227" target="_blank") 
+                                                    i.fab.fa-facebook-f
+                                            li
+                                                a(href="https://vk.com/id544209296" target="_blank")
+                                                    i.fab.fa-google
+
+
+
+        include components/script.pug

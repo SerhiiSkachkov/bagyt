@@ -1,0 +1,139 @@
+@import "../helpers/mixins"
+@import "../helpers/variables"
+* 
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    outline: 0
+
+
+*:before,
+*:after 
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+html 
+    height: 100%
+    -webkit-box-sizing: border-box
+            box-sizing: border-box
+    -ms-overflow-style: scrollbar
+    -webkit-text-size-adjust: none
+    -ms-text-size-adjust: none
+
+body
+    height: 100%
+    color: #090909
+    margin: 0px
+    padding: 0px
+    font-family: $base-font
+    font-weight: 500
+    line-height: 1.2
+    background-color: white
+    position: relative
+    font-size: 16px!important
+    // -webkit-font-smoothing: antialiased
+    // -moz-osx-font-smoothing: grayscale
+
+
+/*MAIN*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100% 
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main 
+    display: block
+
+blockquote, q 
+    quotes: none
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after 
+    content: ''
+    content: none
+
+table 
+    border-collapse: collapse
+    border-width: 0px
+    padding: 0px
+    margin: 0px
+
+
+input,
+textarea 
+    color: #333
+    font-family: $base-font
+    outline: none
+    border-radius: 0
+    -moz-border-radius: 0
+    -webkit-border-radius: 0
+    -webkit-appearance: none
+
+
+input[type="button"],
+input[type="submit"],
+button 
+    cursor: pointer
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+    
+textarea 
+    resize: none
+
+td 
+    margin: 0px
+    padding: 0px
+
+
+form 
+    padding: 0px
+    margin: 0px
+
+a 
+    display: inline-block
+    text-decoration: none
+    outline: none
+    color: #6e6e6e
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    &:hover
+        color: #f23d3d
+        text-decoration: none
+    @include transition($default-transition)
+
+span
+    display: inline-block
+
+a,
+span,
+div,
+button 
+    outline: none!important
+
+
+input[type=submit],
+input[type=button],
+button 
+    -webkit-appearance: none
+    outline: none
+    @include transition($default-transition)
+
+ul, ol
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+img
+    max-width: 100%
+    height: auto
+  
